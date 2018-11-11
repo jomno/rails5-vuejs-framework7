@@ -4,7 +4,8 @@ cache: bundler
 rvm:
   - 2.4.0
 before_script:
+  - yarn install
   - bundle exec rails db:migrate RAILS_ENV=test
   - bundle exec rails db:seed RAILS_ENV=test
-# script:
-#   - bundle exec rspec
+script:
+  - yarn run lint
