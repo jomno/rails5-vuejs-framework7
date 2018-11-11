@@ -1,0 +1,10 @@
+dist: trusty
+language: ruby
+cache: bundler
+rvm:
+  - 2.4.0
+before_script:
+  - bundle exec rails db:migrate RAILS_ENV=test
+  - bundle exec rails db:seed RAILS_ENV=test
+# script:
+#   - bundle exec rspec
