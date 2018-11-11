@@ -107,6 +107,10 @@ export default [
     path: '/',
     component: Home,
   },
+  {
+    path: '/test',
+    component: Home,
+  },
   // About page
   {
     path: '/about/',

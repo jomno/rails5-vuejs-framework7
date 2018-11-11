@@ -23,7 +23,7 @@
     },
     data() {
       // Demo Theme
-      let theme = 'auto';
+      let theme = 'ios';
       if (document.location.search.indexOf('theme=') >= 0) {
         theme = document.location.search.split('theme=')[1].split('&')[0];
       }
