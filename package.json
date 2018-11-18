@@ -7,6 +7,7 @@
     "eslint-plugin-vue": "^4.7.1",
     "framework7": "^3.5.1",
     "framework7-vue": "^3.5.1",
+    "rails-erb-loader": "^5.5.0",
     "vue": "^2.5.17",
     "vue-loader": "14.2.2",
     "vue-template-compiler": "^2.5.17"
@@ -23,8 +24,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "yarn run eslint --ext .vue --ext .js app/javascript/packs"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "jomno <jake8955@naver.com>",
   "license": "ISC"

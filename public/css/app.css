@@ -114,9 +114,10 @@ div.demo-lazy {
 .ios .tabbar .tab-link:not(.tab-link-active) .icon-fill {
   display: none;
 }
-.ios .tabbar .tab-link.tab-link-active .icon:not(.icon-fill) {
+/* wonno 리뷰 */
+/* .ios .tabbar .tab-link.tab-link-active .icon:not(.icon-fill) {
   display: none;
-}
+} */
 
 /* FAB Morph */
 .demo-fab-sheet {

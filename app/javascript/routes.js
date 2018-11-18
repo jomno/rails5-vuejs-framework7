@@ -101,7 +101,8 @@ import RoutableActions from './pages/routable-actions.vue';
 import NotFound from './pages/404.vue';
 
 // wonno 커스텀 뷰
-import Main from './pages/main.vue'
+import Main from './pages/main.vue';
+import Test2 from './test_pages/home.vue';
 
 // Pages
 export default [
@@ -109,6 +110,10 @@ export default [
   {
     path: '/main/',
     component: Main,
+  },
+  {
+    path: '/test2/',
+    component: Test2,
   },
   // Index page
   {

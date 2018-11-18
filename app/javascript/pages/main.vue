@@ -3,18 +3,20 @@
     <f7-navbar>
       <f7-nav-left>
         <f7-link panel-open="left" icon-ios="f7:menu" icon-md="material:menu"></f7-link>
+        <f7-link href="/test" external>test</f7-link>
+        <f7-link href="/test2/" :animate="true" :ignore-cache="true">test2</f7-link>
       </f7-nav-left>
       <f7-nav-title>LOGO</f7-nav-title>
     </f7-navbar>
-    <f7-toolbar tabbar labels>
-      <f7-link tab-link="#tab-1" tab-link-active text="Tab 1" icon-ios="f7:email_fill" icon-md="material:email"></f7-link>
-      <f7-link tab-link="#tab-2" text="Tab 2" icon-ios="f7:today_fill" icon-md="material:today"></f7-link>
-      <f7-link tab-link="#tab-3" text="Tab 3" icon-ios="f7:cloud_fill" icon-md="material:file_upload"></f7-link>
+    <f7-toolbar tabbar labels :bottom-md="isBottom">
+      <f7-link tab-link="#tab-1" tab-link-active icon-ios="f7:home_fill" icon-md="material:email"></f7-link>
+      <f7-link tab-link="#tab-2" icon-ios="f7:add_round_fill" icon-md="material:today"></f7-link>
+      <f7-link tab-link="#tab-3" icon-ios="f7:person_fill" icon-md="material:file_upload"></f7-link>
     </f7-toolbar>
     <f7-tabs>
       <f7-tab id="tab-1" class="page-content" tab-active>
         <f7-block>
-          <p>Tab 1 content</p>
+          <p>{{wonno}}</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam enim quia molestiae facilis laudantium voluptates obcaecati officia cum, sit libero commodi. Ratione illo suscipit temporibus sequi iure ad laboriosam accusamus?</p>
           <p>Saepe explicabo voluptas ducimus provident, doloremque quo totam molestias! Suscipit blanditiis eaque exercitationem praesentium reprehenderit, fuga accusamus possimus sed, sint facilis ratione quod, qui dignissimos voluptas! Aliquam rerum consequuntur deleniti.</p>
           <p>Totam reprehenderit amet commodi ipsum nam provident doloremque possimus odio itaque, est animi culpa modi consequatur reiciendis corporis libero laudantium sed eveniet unde delectus a maiores nihil dolores? Natus, perferendis.</p>
@@ -26,7 +28,7 @@
       </f7-tab>
       <f7-tab id="tab-2" class="page-content">
         <f7-block>
-          <p>Tab 2 content</p>
+          <p>{{twono}}</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam enim quia molestiae facilis laudantium voluptates obcaecati officia cum, sit libero commodi. Ratione illo suscipit temporibus sequi iure ad laboriosam accusamus?</p>
           <p>Saepe explicabo voluptas ducimus provident, doloremque quo totam molestias! Suscipit blanditiis eaque exercitationem praesentium reprehenderit, fuga accusamus possimus sed, sint facilis ratione quod, qui dignissimos voluptas! Aliquam rerum consequuntur deleniti.</p>
           <p>Totam reprehenderit amet commodi ipsum nam provident doloremque possimus odio itaque, est animi culpa modi consequatur reiciendis corporis libero laudantium sed eveniet unde delectus a maiores nihil dolores? Natus, perferendis.</p>
@@ -38,7 +40,7 @@
       </f7-tab>
       <f7-tab id="tab-3" class="page-content">
         <f7-block>
-          <p>Tab 3 content</p>
+          <p>{{threeno}}</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam enim quia molestiae facilis laudantium voluptates obcaecati officia cum, sit libero commodi. Ratione illo suscipit temporibus sequi iure ad laboriosam accusamus?</p>
           <p>Saepe explicabo voluptas ducimus provident, doloremque quo totam molestias! Suscipit blanditiis eaque exercitationem praesentium reprehenderit, fuga accusamus possimus sed, sint facilis ratione quod, qui dignissimos voluptas! Aliquam rerum consequuntur deleniti.</p>
           <p>Totam reprehenderit amet commodi ipsum nam provident doloremque possimus odio itaque, est animi culpa modi consequatur reiciendis corporis libero laudantium sed eveniet unde delectus a maiores nihil dolores? Natus, perferendis.</p>
@@ -71,6 +73,14 @@
       toggleToolbarPosition() {
         this.$$(this.$el).find('.toolbar, .tabbar').toggleClass('toolbar-bottom-md');
       },
+    },
+    data() {
+      return {
+        wonno: "wonno",
+        twono: "장순호",
+        threeno: "미정",
+        isBottom: false,
+      };
     },
   };
 </script>
