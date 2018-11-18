@@ -100,8 +100,16 @@ import RoutableActions from './pages/routable-actions.vue';
 
 import NotFound from './pages/404.vue';
 
+// wonno 커스텀 뷰
+import Main from './pages/main.vue'
+
 // Pages
 export default [
+  // wonno 커스텀 라우트
+  {
+    path: '/main/',
+    component: Main,
+  },
   // Index page
   {
     path: '/',
