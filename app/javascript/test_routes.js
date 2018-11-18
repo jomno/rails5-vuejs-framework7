@@ -3,7 +3,7 @@ import PanelLeft from './test_pages/panel-left.vue';
 import PanelRight from './test_pages/panel-right.vue';
 import About from './test_pages/about.vue';
 
-import Accordion from './test_test_pages/accordion.vue';
+import Accordion from './test_pages/accordion.vue';
 import ActionSheet from './test_pages/action-sheet.vue';
 import Autocomplete from './test_pages/autocomplete.vue';
 import Badge from './test_pages/badge.vue';
